@@ -1,0 +1,54 @@
+{% extends 'nav.html' %}
+{% load static %}
+
+{% block content %}
+<div class="main-content">
+    <div class="container mt-5">
+        <section class="profile-details">
+            <h2 class="section-title text-center mb-4">Enrolled Courses</h2>
+            <div id="enrolled_courses" class="list-group"></div>
+        </section>
+    </div>
+</div>
+
+<script>
+    window.onload = function () {
+        getEnrolledCourses();
+    }
+
+    function getEnrolledCourses() {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            window.location.href = "{% url 'login_page' %}";
+        }
+
+        fetch('http://127.0.0.1:8000/student_info/', {
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            const enrolledCourses = data.enrolled_courses;
+            const enrolledCoursesContainer = document.getElementById('enrolled_courses');
+
+            enrolledCourses.forEach(course => {
+                enrolledCoursesContainer.innerHTML += `
+                    <div id="${course.course_id}" class="course-item list-group-item d-flex justify-content-between align-items-center">
+                        <span class="course-name">${course.course_name}</span>
+                        <button class="btn btn-primary btn-sm" onClick="goCourse(${course.course_id})">View Course</button>
+                    </div>`;
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    }
+
+    function goCourse(courseId) {
+        const url = `/course_description_page/?course_id=${courseId}`;
+        window.location.href = url;
+    }
+</script>
+{% endblock %}

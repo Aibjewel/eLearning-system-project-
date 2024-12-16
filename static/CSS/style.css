@@ -1,0 +1,676 @@
+/* Import Google Fonts for a cleaner, modern look */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General body styling */
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation styling */
+nav {
+  background-color: #004d99;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #003366;
+}
+
+/* Heading styles */
+h2.CG {
+  text-align: center;
+  color: #004d99;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Gallery (Course Card) styling */
+div.gallery {
+  margin: 15px;
+  padding: 20px;
+  width: 320px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: inline-block;
+  text-align: center;
+}
+
+div.gallery:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallery image styling */
+div.gallery img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Course title styling */
+div.desc {
+  font-weight: 700;
+  font-size: 22px;
+  color: #004d99;
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Button styling */
+.button-29 {
+  width: 100%;
+  height: 45px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button-29:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Footer styling */
+#footer {
+  background-color: #004d99;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+#footer a:hover {
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  div.gallery {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  h2.CG {
+    font-size: 24px;
+  }
+
+  .button-29 {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+
+/* Additional styling for page sections */
+section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Smooth transitions */
+a, .button-29, div.gallery {
+  transition: all 0.3s ease;
+}
+/* About Us Section */
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 2px solid #346a99;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #004d99;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.about-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* How it Works List */
+.how-it-works-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.how-it-works-list li {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Note styling */
+.note {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Section spacing and backgrounds */
+#about, #courses, #subscribe {
+  padding: 60px 0;
+}
+
+.container.text-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-content {
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.8;
+}
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #004d99;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.Desc {
+  width: 80%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.course-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.course-name {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.course-description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+
+.submit-button {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+/* Profile Details Container */
+.profile-details {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.profile-details h2.section-title {
+  font-size: 2rem;
+  color: #004d99;
+  font-weight: 700;
+}
+
+/* Course Item Styling */
+.course-item {
+  background-color: #e9ecef;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.course-item:hover {
+  background-color: #dfe3e8;
+  transform: translateY(-2px);
+}
+
+.course-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Primary Button Styling */
+.btn-primary {
+  background-color: #004d99;
+  border-color: #004d99;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #003366;
+  border-color: #003366;
+}
+/* Profile Information Card */
+.profile-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #004d99;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile Field Styling */
+.profile-field {
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+  padding: 5px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+}
+
+/* Label Styling */
+.col-form-label {
+  font-weight: 600;
+  color: #555;
+  text-align: right;
+}
+
+/* Responsive adjustments for Profile Information */
+@media (max-width: 576px) {
+  .col-form-label {
+      text-align: left;
+  }
+}
+/* Spacer to create space at the top */
+.spacer {
+  height: 110px;
+}
+
+/* Centered container for the registration form */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container_log {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form Title */
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004d99;
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+.form-control {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.logbtn {
+  background-color: #004d99;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.logbtn:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+/* Message Styling */
+.message {
+  color: #ff4d4d;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+/* Sign-in Link Styling */
+.sign-in-link {
+  color: #004d99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-in-link:hover {
+  text-decoration: underline;
+}
+/* =====================
+   Request Course Page Styles
+   ===================== */
+
+/* Title and Subtitle Styling */
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004d99;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-subtitle {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Request Form Container */
+.request-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Textarea Styling */
+.form-control {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  background-color: #004d99;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.submit-button:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+/* =====================
+   Sign In Page Styles
+   ===================== */
+
+/* Spacer to create space at the top */
+.spacer {
+  height: 100px;
+}
+
+/* Centered container for the login form */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container_log {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Form Title */
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #004d99;
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+.input-group .form-control {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.input-group-text {
+  background-color: #e9ecef;
+  color: #555;
+  font-size: 1.2rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+/* Button Styling */
+.logbtn {
+  background-color: #004d99;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: background-color 0.3s, transform 0.3s;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.logbtn:hover {
+  background-color: #003366;
+  transform: translateY(-2px);
+}
+
+/* Sign-up Link Styling */
+.sign-up-link {
+  color: #004d99;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sign-up-link:hover {
+  text-decoration: underline;
+}
+/* =====================
+   Navigation and Footer Styles
+   ===================== */
+
+/* General Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding-top: 70px; /* Offset for fixed navbar */
+}
+
+/* Logo Styling */
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #004d99;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #dfe3e8;
+}
+
+.btn-primary {
+    background-color: #004d99;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #003366;
+}
+
+.btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #004d99;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    color: #555;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer-link {
+    color: #555;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: #004d99;
+}
+/* Ensure the navbar is fixed at the top and spans full width */
+.navbar {
+  background-color: #004d99;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keeps navbar on top of other elements */
+}
+
+/* Offset for Fixed Navbar */
+.main-content {
+  padding-top: 80px; /* Adjust based on your navbar height */
+}

@@ -1,0 +1,54 @@
+{% extends 'nav.html' %}
+
+{% block content %}
+{% load static %}
+<div class="main-content">
+
+    <header>
+        
+        <style>
+          
+          #intro-example {
+            height: 400px;
+          }
+      
+          
+          @media (min-width: 992px) {
+            #intro-example {
+              height: 600px;
+            }
+          }
+        </style>
+      
+    
+        
+        <div
+          id="intro-example"
+          class="p-5 text-center bg-image"
+          style="background-image: url('https://comptroller.tn.gov/content/dam/cot/orea/images/TSUCampus-4.jpg');"
+        >
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.7);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white">
+                
+              
+                <h1 class="section-title" style="font-family: 'Times New Roman', Times, serif;">Think. Work. Serve</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </header>
+    
+    <section id="courses" style="padding: 50px 0; background-color: #ffffff;">
+        <div class="container text-center">
+            <h1 class="section-title">Graduate Courses</h1>
+            <div id="course-container" class="w-100">
+                <!-- Courses will be dynamically added here -->
+                <script src="{% static 'JS/script.js' %}"></script>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
